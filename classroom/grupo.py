@@ -21,9 +21,8 @@ class Grupo:
     def agregarAlumno(self, alumno, lista = None):
         if lista is None:
             lista = []
+        self.listadoAlumnos = self.listadoAlumnos + lista
         lista.append(alumno)
-        for j in lista:
-            self.listadoAlumnos.append(j)
 
     def __str__(self):
         return "Grupo de estudiantes " + self._grupo      
